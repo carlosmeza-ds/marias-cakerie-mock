@@ -1,3 +1,28 @@
+/* Font definitions — Julie's custom brand fonts */
+@font-face{
+  font-family:'Fresh Mango';
+  src:url('assets/fonts/fresh-mango/Fonts/FreshMango-Regular.otf') format('opentype'),
+      url('assets/fonts/fresh-mango/Fonts/FreshMango-Regular.ttf') format('truetype');
+  font-weight:400;font-style:normal;font-display:swap
+}
+@font-face{
+  font-family:'Fresh Mango';
+  src:url('assets/fonts/fresh-mango/Fonts/FreshMango-Italic.otf') format('opentype'),
+      url('assets/fonts/fresh-mango/Fonts/FreshMango-Italic.ttf') format('truetype');
+  font-weight:400;font-style:italic;font-display:swap
+}
+@font-face{
+  font-family:'Aesthetic Monoline';
+  src:url('assets/fonts/AestheticMonoline.otf') format('opentype'),
+      url('assets/fonts/AestheticMonoline.ttf') format('truetype');
+  font-weight:400;font-style:normal;font-display:swap
+}
+@font-face{
+  font-family:'Woolen Plaid Sans';
+  src:url('assets/fonts/WoolenPlaidSans.ttf') format('truetype');
+  font-weight:400;font-style:normal;font-display:swap
+}
+
 :root{
   --soft-pink:#F4D9E1;
   --brand-pink:#E8B4B8;
@@ -13,7 +38,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{font-family:'Lora',Georgia,serif;color:var(--ink);background:#fff;line-height:1.7;font-size:17px}
+body{font-family:'Woolen Plaid Sans','Lora',Georgia,serif;color:var(--ink);background:#fff;line-height:1.7;font-size:17px}
 img{max-width:100%;height:auto;display:block}
 a{color:var(--cranberry);text-decoration:none}
 a:hover{color:var(--cranberry-dark)}
@@ -21,28 +46,27 @@ a:hover{color:var(--cranberry-dark)}
 .narrow{max-width:780px;margin:0 auto;padding:0 24px}
 
 /* Typography */
-h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1.15}
-h1{font-size:clamp(2.4rem,5vw,4rem)}
-h2{font-size:clamp(1.8rem,3.5vw,2.7rem);margin-bottom:.6em}
-h3{font-size:1.3rem;margin-bottom:.4em}
-.script{font-family:'Dancing Script',cursive;font-weight:600;color:var(--cranberry)}
-.eyebrow{font-family:'Lora',serif;font-style:italic;color:var(--warm-rose);font-size:.92rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px;display:block}
+h1,h2,h3,h4{font-family:'Fresh Mango','Playfair Display',Georgia,serif;font-weight:400;color:var(--ink);letter-spacing:-.005em;line-height:1.15}
+h1{font-size:clamp(2.6rem,5.5vw,4.5rem)}
+h2{font-size:clamp(1.9rem,3.8vw,3rem);margin-bottom:.6em}
+h3{font-size:1.4rem;margin-bottom:.4em}
+.script{font-family:'Aesthetic Monoline','Dancing Script',cursive;font-weight:400;color:var(--deep-rose);font-size:1.15em}
+.eyebrow{font-family:'Aesthetic Monoline',cursive;color:var(--warm-rose);font-size:1.15rem;letter-spacing:.03em;margin-bottom:8px;display:block;line-height:1.2}
 
 /* Header */
 header{background:#fff;border-bottom:1px solid var(--soft-pink);position:sticky;top:0;z-index:100;padding:14px 0}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none}
-.brand .brand-name{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--ink);font-weight:600;letter-spacing:.01em}
-.brand .brand-sub{font-family:'Dancing Script',cursive;font-size:1rem;color:var(--cranberry);margin-top:2px}
+.brand{display:flex;align-items:center;text-decoration:none;line-height:1}
+.brand img{height:52px;width:auto;object-fit:contain}
 nav ul{list-style:none;display:flex;gap:22px;align-items:center;margin:0}
-nav a{color:var(--ink);font-size:.95rem;font-weight:500;padding:6px 2px;border-bottom:2px solid transparent;transition:border-color .18s,color .18s}
+nav a{color:var(--ink);font-family:'Woolen Plaid Sans',sans-serif;font-size:.95rem;font-weight:400;padding:6px 2px;border-bottom:2px solid transparent;transition:border-color .18s,color .18s}
 nav a:hover,nav a.active{border-bottom-color:var(--cranberry);color:var(--cranberry)}
-nav a.nav-two-sisters{color:var(--sage-dark);font-family:'Dancing Script',cursive;font-size:1.15rem;padding:6px 12px;border:1.5px solid var(--sage);border-radius:20px;border-bottom:1.5px solid var(--sage)}
+nav a.nav-two-sisters{color:var(--sage-dark);font-family:'Aesthetic Monoline',cursive;font-size:1.35rem;padding:4px 14px;border:1.5px solid var(--sage);border-radius:20px;border-bottom:1.5px solid var(--sage);letter-spacing:.02em}
 nav a.nav-two-sisters:hover{background:var(--sage);color:#fff}
 .nav-toggle{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink);cursor:pointer}
 
 /* Buttons */
-.btn{display:inline-block;padding:14px 32px;background:var(--cranberry);color:#fff;font-family:'Lora',serif;font-size:1rem;font-weight:600;border:0;border-radius:2px;cursor:pointer;letter-spacing:.02em;transition:background .18s,transform .12s}
+.btn{display:inline-block;padding:14px 32px;background:var(--cranberry);color:#fff;font-family:'Woolen Plaid Sans',sans-serif;font-size:1rem;font-weight:400;border:0;border-radius:2px;cursor:pointer;letter-spacing:.02em;transition:background .18s,transform .12s}
 .btn:hover{background:var(--cranberry-dark);color:#fff;transform:translateY(-1px)}
 .btn-outline{background:transparent;color:var(--cranberry);border:1.5px solid var(--cranberry)}
 .btn-outline:hover{background:var(--cranberry);color:#fff}
@@ -52,20 +76,19 @@ nav a.nav-two-sisters:hover{background:var(--sage);color:#fff}
 
 /* Hero */
 .hero{background:var(--soft-pink);padding:80px 0 90px;position:relative;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
 .hero-copy h1{margin-bottom:24px}
-.hero-copy h1 .script{display:block;margin-top:6px}
+.hero-copy h1 .script{display:block;margin-top:-10px;font-size:1.4em;color:var(--deep-rose)}
 .hero-copy p.lede{font-size:1.15rem;color:var(--steel);margin-bottom:32px;max-width:480px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
 .hero-visual{position:relative;min-height:420px;display:flex;align-items:center;justify-content:center}
-.hero-visual svg{width:100%;max-width:460px;height:auto}
-.hero-decor{position:absolute;opacity:.35}
-.hero-decor.top-left{top:-30px;left:-30px;width:180px;transform:rotate(-15deg)}
-.hero-decor.bot-right{bottom:-40px;right:-40px;width:220px;transform:rotate(20deg)}
+.hero-visual img.hero-icon{max-width:340px;width:100%;opacity:.85;filter:drop-shadow(0 8px 20px rgba(178,58,72,.15))}
+/* Decorative background pattern */
+.hero::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-image:url('assets/marys-logo.jpg');background-size:600px;background-repeat:repeat;opacity:.08;z-index:1}
 
 /* Trust bar */
 .trust-bar{background:var(--cream);padding:22px 0;border-bottom:1px solid var(--soft-pink)}
-.trust-bar ul{list-style:none;display:flex;justify-content:center;gap:36px;flex-wrap:wrap;color:var(--steel);font-size:.92rem;letter-spacing:.05em}
+.trust-bar ul{list-style:none;display:flex;justify-content:center;gap:36px;flex-wrap:wrap;color:var(--steel);font-size:.92rem;letter-spacing:.03em}
 .trust-bar li{display:flex;align-items:center;gap:8px}
 .trust-bar li::before{content:"";display:block;width:6px;height:6px;background:var(--cranberry);border-radius:50%}
 
@@ -73,21 +96,27 @@ nav a.nav-two-sisters:hover{background:var(--sage);color:#fff}
 section{padding:90px 0}
 section.tint{background:var(--cream)}
 section.pink{background:var(--soft-pink)}
-.section-head{text-align:center;max-width:640px;margin:0 auto 60px}
+.section-head{text-align:center;max-width:680px;margin:0 auto 60px}
 .section-head p{color:var(--steel);font-size:1.05rem;margin-top:12px}
 
 /* What we create grid */
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.card{background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 6px 22px -12px rgba(178,58,72,.18);transition:transform .18s,box-shadow .18s}
-.card:hover{transform:translateY(-4px);box-shadow:0 12px 32px -12px rgba(178,58,72,.28)}
+.card{background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 6px 22px -12px rgba(178,58,72,.18);transition:transform .18s,box-shadow .18s;text-decoration:none;color:inherit;display:block}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 32px -12px rgba(178,58,72,.28);color:inherit}
 .card-visual{aspect-ratio:1;background:var(--soft-pink);display:flex;align-items:center;justify-content:center;padding:36px}
-.card-visual svg{max-width:100%;max-height:100%;height:auto;color:var(--cranberry)}
+.card-visual img{max-width:70%;max-height:70%;width:auto;height:auto;filter:brightness(0);opacity:.75}
 .card-body{padding:22px 20px;text-align:center}
 .card-body h3{margin-bottom:6px}
 .card-body p{color:var(--steel);font-size:.92rem}
 .card-visual.rose{background:var(--brand-pink)}
 .card-visual.cream{background:var(--cream)}
 .card-visual.warm{background:var(--warm-rose)}
+/* Sage variant for Two Sisters cards */
+body.ts-page .card-visual{background:var(--cream)}
+body.ts-page .card-visual.rose{background:var(--soft-pink)}
+body.ts-page .card-visual.cream{background:#EDF0E5}
+body.ts-page .card-visual.warm{background:var(--warm-rose)}
+body.ts-page .card-visual img{filter:brightness(0) invert(45%) sepia(15%) saturate(500%) hue-rotate(45deg) brightness(90%)}
 
 /* Gallery / featured work */
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -96,39 +125,47 @@ section.pink{background:var(--soft-pink)}
 .gallery-item:nth-child(3n){background:var(--soft-pink)}
 .gallery-item:nth-child(4n){background:var(--cream)}
 .gallery-item:nth-child(6n){background:var(--brand-pink)}
-.gallery-item svg{max-width:70%;max-height:70%;color:var(--cranberry);opacity:.85}
-.gallery-item .caption{position:absolute;bottom:14px;left:16px;right:16px;font-family:'Dancing Script',cursive;color:var(--ink);font-size:1.05rem;text-align:center}
+.gallery-item img{max-width:70%;max-height:70%;filter:brightness(0);opacity:.7}
+.gallery-item .caption{position:absolute;bottom:14px;left:16px;right:16px;font-family:'Aesthetic Monoline',cursive;color:var(--ink);font-size:1.2rem;text-align:center;line-height:1.2}
 .gallery-tall{grid-row:span 2;aspect-ratio:1/2}
 
 /* Two Sisters teaser */
 .ts-teaser{background:linear-gradient(120deg,var(--cream) 0%,var(--soft-pink) 100%);padding:100px 0;position:relative;overflow:hidden}
 .ts-teaser .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.ts-teaser .eyebrow{color:var(--sage-dark);font-family:'Dancing Script',cursive;font-style:normal;font-size:1.3rem;letter-spacing:.05em;text-transform:none}
+.ts-teaser .eyebrow{color:var(--sage-dark);font-family:'Aesthetic Monoline',cursive}
 .ts-teaser h2{color:var(--sage-dark)}
+.ts-teaser h2 .script{color:var(--sage-dark)}
 .ts-teaser p{color:var(--steel);font-size:1.05rem;margin-bottom:24px;max-width:460px}
 .ts-visual{position:relative;min-height:360px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:8px;padding:40px;box-shadow:0 12px 40px -18px rgba(138,154,123,.4)}
-.ts-visual svg{max-width:280px;height:auto;color:var(--sage-dark)}
-.ts-badge{position:absolute;top:-16px;right:-16px;background:var(--sage-dark);color:#fff;font-family:'Dancing Script',cursive;font-size:1.05rem;padding:14px 20px;border-radius:50%;transform:rotate(12deg);box-shadow:0 6px 16px -6px rgba(0,0,0,.25);width:100px;height:100px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.2}
+.ts-visual img{max-width:280px;height:auto;filter:brightness(0) invert(45%) sepia(15%) saturate(500%) hue-rotate(45deg) brightness(90%)}
+.ts-badge{position:absolute;top:-16px;right:-16px;background:var(--sage-dark);color:#fff;font-family:'Aesthetic Monoline',cursive;font-size:1.3rem;padding:14px 20px;border-radius:50%;transform:rotate(12deg);box-shadow:0 6px 16px -6px rgba(0,0,0,.25);width:110px;height:110px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.15}
 
 /* About preview */
 .about-preview{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:center}
-.about-photo{aspect-ratio:1;background:var(--brand-pink);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:60px}
-.about-photo svg{max-width:70%;color:var(--cranberry)}
+.about-photo{aspect-ratio:1;background:var(--brand-pink);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:60px;overflow:hidden}
+.about-photo img{max-width:75%;filter:brightness(0);opacity:.7}
+.about-photo.logo{background:var(--soft-pink);padding:40px}
+.about-photo.logo img{max-width:85%;filter:none;opacity:1}
 .about-copy h2{margin-bottom:20px}
 .about-copy p{color:var(--steel);font-size:1.05rem;margin-bottom:18px}
+
+/* Cocktail showcase (Two Sisters page — full-width strip) */
+.cocktail-showcase{background:var(--cream);padding:60px 0;text-align:center;overflow:hidden}
+.cocktail-showcase img{max-width:900px;width:100%;margin:0 auto;opacity:.9}
 
 /* FAQ */
 .faq-list{max-width:780px;margin:0 auto}
 .faq-list details{background:#fff;border:1px solid var(--soft-pink);border-radius:4px;padding:20px 24px;margin-bottom:12px;transition:box-shadow .18s}
 .faq-list details[open]{box-shadow:0 6px 22px -12px rgba(178,58,72,.2)}
-.faq-list summary{font-family:'Playfair Display',serif;font-weight:600;color:var(--ink);font-size:1.1rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
-.faq-list summary::after{content:'+';font-size:1.6rem;color:var(--cranberry);font-family:'Lora',serif;font-weight:400;line-height:1}
+.faq-list summary{font-family:'Fresh Mango',serif;font-weight:400;color:var(--ink);font-size:1.2rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq-list summary::after{content:'+';font-size:1.8rem;color:var(--cranberry);font-family:'Woolen Plaid Sans',sans-serif;font-weight:400;line-height:1}
 .faq-list details[open] summary::after{content:'−'}
 .faq-list details p{margin-top:14px;color:var(--steel);font-size:1rem}
 
 /* Contact / final CTA */
 .final-cta{background:var(--cranberry);color:#fff;padding:100px 0;text-align:center}
 .final-cta h2{color:#fff;margin-bottom:16px}
+.final-cta h2 .script{color:var(--soft-pink)}
 .final-cta p{color:rgba(255,255,255,.9);font-size:1.15rem;margin-bottom:32px;max-width:560px;margin-left:auto;margin-right:auto}
 .final-cta .btn{background:#fff;color:var(--cranberry)}
 .final-cta .btn:hover{background:var(--cream)}
@@ -140,7 +177,7 @@ section.pink{background:var(--soft-pink)}
 .contact-info h3{margin-bottom:14px}
 .contact-info p{color:var(--steel);margin-bottom:24px}
 .contact-info dl{display:grid;gap:14px}
-.contact-info dt{font-family:'Playfair Display',serif;color:var(--cranberry);font-weight:600;font-size:.95rem}
+.contact-info dt{font-family:'Fresh Mango',serif;color:var(--cranberry);font-weight:400;font-size:1.05rem}
 .contact-info dd{color:var(--ink);font-size:1rem}
 .contact-form{background:var(--cream);padding:36px;border-radius:4px}
 .contact-form label{display:block;margin-bottom:16px}
@@ -154,6 +191,7 @@ section.pink{background:var(--soft-pink)}
 
 /* Two Sisters page (secondary palette) */
 body.ts-page .hero{background:linear-gradient(120deg,var(--cream) 0%,var(--soft-pink) 100%)}
+body.ts-page .hero::before{opacity:.05}
 body.ts-page .hero-copy h1 .script,body.ts-page nav a.active{color:var(--sage-dark)}
 body.ts-page .btn{background:var(--sage-dark)}
 body.ts-page .btn:hover{background:var(--sage)}
@@ -161,26 +199,27 @@ body.ts-page .btn-outline{background:transparent;color:var(--sage-dark);border-c
 body.ts-page .btn-outline:hover{background:var(--sage-dark);color:#fff}
 body.ts-page .final-cta{background:var(--sage-dark)}
 body.ts-page .final-cta .btn{color:var(--sage-dark)}
-body.ts-page .card-visual svg,body.ts-page .gallery-item svg,body.ts-page .about-photo svg{color:var(--sage-dark)}
+body.ts-page .final-cta h2 .script{color:#EDF0E5}
 body.ts-page section.pink{background:var(--soft-pink)}
 body.ts-page .card-body p a{color:var(--sage-dark)}
 body.ts-page .eyebrow{color:var(--sage-dark)}
+body.ts-page .about-photo img{filter:brightness(0) invert(45%) sepia(15%) saturate(500%) hue-rotate(45deg) brightness(90%)}
 
 /* Footer */
 footer{background:var(--warm-rose);color:#fff;padding:60px 0 24px}
 footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
-footer h4{color:#fff;font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:14px}
+footer h4{color:#fff;font-family:'Fresh Mango',serif;font-size:1.2rem;font-weight:400;margin-bottom:14px}
 footer p,footer li{color:rgba(255,255,255,.9);font-size:.93rem;line-height:1.7}
 footer ul{list-style:none}
 footer a{color:rgba(255,255,255,.9);border-bottom:1px solid transparent;transition:border-color .18s}
 footer a:hover{color:#fff;border-bottom-color:rgba(255,255,255,.6)}
-footer .footer-brand p{max-width:280px;margin-top:10px}
+footer .footer-brand img{height:60px;width:auto;margin-bottom:14px}
+footer .footer-brand p{max-width:280px}
 footer .copyright{border-top:1px solid rgba(255,255,255,.25);padding-top:24px;text-align:center;font-size:.85rem;color:rgba(255,255,255,.75)}
 footer .copyright a{color:rgba(255,255,255,.9)}
-footer .placeholder-note{background:rgba(255,255,255,.15);border:1px dashed rgba(255,255,255,.4);padding:14px 18px;border-radius:4px;margin-top:14px;font-size:.85rem}
 
 /* Placeholder / TODO markers for client review */
-.todo{border-left:3px dashed var(--cranberry);background:rgba(178,58,72,.05);padding:10px 14px;margin:14px 0;font-size:.9rem;color:var(--cranberry);font-family:'Lora',serif;font-style:italic}
+.todo{border-left:3px dashed var(--cranberry);background:rgba(178,58,72,.05);padding:10px 14px;margin:14px 0;font-size:.9rem;color:var(--cranberry);font-family:'Woolen Plaid Sans',sans-serif;font-style:italic}
 .todo::before{content:"⚠ Placeholder — ";font-weight:600}
 
 /* Responsive */
@@ -203,4 +242,5 @@ footer .placeholder-note{background:rgba(255,255,255,.15);border:1px dashed rgba
   section{padding:56px 0}
   .final-cta{padding:70px 0}
   .hero{padding:56px 0 64px}
+  .brand img{height:44px}
 }

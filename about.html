@@ -11,12 +11,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/marys-logo-rose.png">
 </head>
 <body><header>
 <div class="wrap">
 <a href="index.html" class="brand">
-<span class="brand-name">Maria&rsquo;s Cakerie</span>
-<span class="brand-sub">&amp; desserts</span>
+<img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie &amp; Desserts">
 </a>
 <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
 <nav>
@@ -39,7 +39,7 @@
 <h1>Hi, I&rsquo;m <span class="script">Maria</span></h1>
 <p class="lede">Baker, business owner, older sister. Building Maria&rsquo;s Cakerie one cake at a time from a home kitchen in Victoria, BC.</p>
 </div>
-<div class="hero-visual"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="100" cy="70" r="28"/><path d="M72 65c-2-15 8-30 28-30s30 15 28 30"/><path d="M60 100l-10 8v50h30M140 100l10 8v50h-30"/><path d="M75 100c25 0 25 60 25 80M125 100c-25 0-25 60-25 80"/><path d="M70 100c0 40 5 80 30 80s30-40 30-80"/><path d="M80 90c5 3 10 5 20 5s15-2 20-5"/><path d="M85 60c3 3 6 4 15 4s12-1 15-4"/><circle cx="90" cy="72" r="1.5" fill="currentColor"/><circle cx="110" cy="72" r="1.5" fill="currentColor"/><path d="M55 130l-15 10v20l15-5M145 130l15 10v20l-15-5"/></svg></div>
+<div class="hero-visual"><img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie logo" style="max-width:340px"></div>
 </div>
 </div>
 
@@ -52,11 +52,11 @@
 
 <div class="todo">Replace this whole story with Maria&rsquo;s real bio (2-3 paragraphs). What&rsquo;s here uses the confirmed facts (previous name Tina&rsquo;s, mobile only, Victoria BC, one-woman studio) but the personal details are placeholder.</div>
 
-<h2 style="margin-top:60px">Then there&rsquo;s Carolina</h2>
+<h2 style="margin-top:60px">Then there&rsquo;s <span class="script">Carolina</span></h2>
 <p>My sister Carolina runs the drinks side of the operation. When we started getting asked "who&rsquo;s doing the beverages?" at every wedding cake consultation, we decided the answer should be us.</p>
 <p>That&rsquo;s where <a href="two-sisters.html">Two Sisters Social</a> comes in &mdash; our mobile drink bar for weddings, showers, corporate events and private parties. Book them alongside the cake or separately; it&rsquo;s the same phone number either way.</p>
 
-<h2 style="margin-top:60px">What matters here</h2>
+<h2 style="margin-top:60px">What <span class="script">matters here</span></h2>
 <p><strong>Made from scratch.</strong> No mixes, no premade shells, no shortcuts. If it&rsquo;s in a Maria&rsquo;s Cakerie box, I made it.</p>
 <p><strong>Designed with you.</strong> No template menus. Every order is a conversation, and the cake is built around your event, your palette, your flavour.</p>
 <p><strong>One baker.</strong> You&rsquo;re not talking to a receptionist or a portal. You&rsquo;re talking to me.</p>
@@ -65,7 +65,7 @@
 
 <div class="final-cta">
 <div class="wrap">
-<h2>Let&rsquo;s bake something</h2>
+<h2>Let&rsquo;s <span class="script">bake something</span></h2>
 <p>Send me your date, occasion, and any inspiration you&rsquo;ve saved. I&rsquo;ll come back with a quote and next steps within 24 hours.</p>
 <div class="hero-cta" style="justify-content:center">
 <a href="contact.html" class="btn">Send an Inquiry</a>
@@ -76,7 +76,7 @@
 <footer>
 <div class="wrap">
 <div class="footer-brand">
-<h4>Maria&rsquo;s Cakerie &amp; Desserts</h4>
+<img src="assets/marys-logo-white.png" alt="Maria&rsquo;s Cakerie">
 <p>Custom cakes, wedding cakes, dessert tables and treat boxes, handmade in Victoria, BC. Mobile only.</p>
 <p style="margin-top:14px"><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie on Instagram</a></p>
 </div>
@@ -114,7 +114,6 @@
 </div>
 </footer>
 <script>
-// Contact form no-op (mock only) — swaps to a success message
 document.addEventListener('submit', function(e){
   if (e.target.matches('.contact-form')) {
     e.preventDefault();

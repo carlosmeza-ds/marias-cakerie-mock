@@ -11,12 +11,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/marys-logo-rose.png">
 </head>
 <body><header>
 <div class="wrap">
 <a href="index.html" class="brand">
-<span class="brand-name">Maria&rsquo;s Cakerie</span>
-<span class="brand-sub">&amp; desserts</span>
+<img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie &amp; Desserts">
 </a>
 <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
 <nav>
@@ -39,7 +39,7 @@
 <h1>Let&rsquo;s make your <span class="script">cake happen</span></h1>
 <p class="lede">Tell us the date, the occasion and any inspiration you have. Maria comes back within 24 hours with a quote and next steps.</p>
 </div>
-<div class="hero-visual"><svg viewBox="0 0 100 100" fill="currentColor"><path d="M50 20l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/><path d="M75 55l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path d="M25 55l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></div>
+<div class="hero-visual"><img src="assets/icons/cupcake.png" alt="Cupcake illustration" class="hero-icon"></div>
 </div>
 </div>
 
@@ -90,7 +90,7 @@
 <footer>
 <div class="wrap">
 <div class="footer-brand">
-<h4>Maria&rsquo;s Cakerie &amp; Desserts</h4>
+<img src="assets/marys-logo-white.png" alt="Maria&rsquo;s Cakerie">
 <p>Custom cakes, wedding cakes, dessert tables and treat boxes, handmade in Victoria, BC. Mobile only.</p>
 <p style="margin-top:14px"><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie on Instagram</a></p>
 </div>
@@ -128,7 +128,6 @@
 </div>
 </footer>
 <script>
-// Contact form no-op (mock only) — swaps to a success message
 document.addEventListener('submit', function(e){
   if (e.target.matches('.contact-form')) {
     e.preventDefault();

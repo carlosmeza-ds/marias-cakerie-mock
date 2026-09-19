@@ -38,7 +38,7 @@ h3{font-size:1.15rem;font-weight:500;margin-bottom:.3em}
 header{background:var(--very-soft-pink);padding:20px 0;position:sticky;top:0;z-index:100}
 header .wrap.hdr{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px}
 .brand{display:flex;justify-content:center;text-decoration:none;line-height:1}
-.brand img{height:104px;width:auto;object-fit:contain}
+.brand img{height:150px;width:auto;object-fit:contain}
 nav.nav-left ul,nav.nav-right ul{list-style:none;display:flex;align-items:center;gap:22px;margin:0}
 nav.nav-left ul{justify-content:flex-end}
 nav.nav-right ul{justify-content:flex-start}
@@ -231,7 +231,7 @@ footer .copyright{border-top:1px solid rgba(255,255,255,.2);margin-top:32px;padd
   nav.nav-left.mobile-open,nav.nav-right.mobile-open{display:block;position:absolute;top:100%;left:0;right:0;background:var(--very-soft-pink);border-top:1px solid var(--line);padding:16px 24px;z-index:99;box-shadow:0 8px 22px -8px rgba(0,0,0,.15)}
   nav.nav-left ul,nav.nav-right ul{flex-direction:column;gap:14px;align-items:flex-start;justify-content:flex-start}
   .brand{justify-content:flex-start}
-  .brand img{height:68px}
+  .brand img{height:100px}
   .nav-toggle{display:block;justify-self:end}
   .rose-block .wrap,.contact-grid{grid-template-columns:1fr;gap:40px}
   .feature-split .fs-inner,.feature-split.reverse .fs-inner,.ts-teaser .fs-inner{grid-template-columns:1fr;gap:0}

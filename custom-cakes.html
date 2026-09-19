@@ -6,101 +6,88 @@
 <title>Custom Cakes in Victoria BC | Birthday Cakes | Maria's Cakerie</title>
 <meta name="description" content="Custom birthday cakes, cupcakes and celebration cakes in Victoria, BC. Handcrafted by Maria. Any flavour, any design, any occasion.">
 <meta name="robots" content="noindex, nofollow">
-<link rel="canonical" href="./cakes">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/png" href="assets/marys-logo-rose.png">
 </head>
 <body><header>
-<div class="wrap">
+<div class="wrap hdr">
+<nav class="nav-left">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="custom-cakes.html" class="active">Custom Cakes</a></li>
+<li><a href="wedding-cakes.html">Weddings</a></li>
+</ul>
+</nav>
 <a href="index.html" class="brand">
 <img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie &amp; Desserts">
 </a>
-<button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
-<nav>
+<button class="nav-toggle" aria-label="Menu" onclick="document.querySelectorAll('nav.nav-left, nav.nav-right').forEach(n=>n.classList.toggle('mobile-open'))">&#9776;</button>
+<nav class="nav-right">
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="custom-cakes.html" class="active">Custom Cakes</a></li>
-<li><a href="wedding-cakes.html">Wedding Cakes</a></li>
-<li><a href="chunky-cookies.html">Chunky Cookies</a></li>
+<li><a href="chunky-cookies.html">Cookies</a></li>
 <li><a href="workshops.html">Workshops</a></li>
 <li><a href="gallery.html">Gallery</a></li>
-<li><a href="about.html">About Me</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="two-sisters.html" class="nav-two-sisters">Two Sisters Social</a></li>
+<li><a href="two-sisters.html">Two Sisters</a></li>
+<li><a href="contact.html">Order</a></li>
+<li><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener" class="social">IG</a></li>
 </ul>
 </nav>
 </div>
 </header>
-<div class="hero">
-<div class="wrap">
-<div class="hero-copy">
+<div class="hero-image" style="background-image:url('assets/photos/dsc7210.shrunk.jpg')"></div>
+
+<div class="hero-text">
+<div class="narrow">
 <span class="eyebrow">Custom Cakes in Victoria, BC</span>
-<h1>If you can dream it, <span class="script">we can bake it</span></h1>
+<h1>If you can dream it, we can bake it</h1>
 <p class="lede">Birthday cakes, celebration cakes, dessert tables and treat boxes. Any flavour, any design, any occasion. Every cake made from scratch by Maria in Victoria, BC.</p>
-<div class="hero-cta">
-<a href="contact.html" class="btn">Inquire Here</a>
+<div class="btn-row">
+<a href="contact.html" class="btn">Inquire about your cake</a>
+<a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
 </div>
-</div>
-<div class="hero-visual"><img src="assets/icons/pcake.png" alt="Custom cake slice" class="hero-icon"></div>
 </div>
 </div>
 
-<section>
+<section class="text tint">
 <div class="narrow">
-<div class="todo">This page currently uses only the "Custom Cakes" heading and description Maria has published on her Square site. Additional copy (types of cakes, flavours, examples, lead time) pending. Ask Maria for details before publishing.</div>
-<p style="text-align:center;margin:40px 0"><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener" class="btn">Order now</a></p>
+<div class="todo">Copy below is placeholder frame based only on the "Custom Cakes" heading and the description that appears on Maria&rsquo;s Square site. Ask Maria for full flavour list, sizing guide, lead time, allergy options before publishing.</div>
+<h2>What we make</h2>
+<p>Birthday cakes, wedding cakes, cupcakes, dessert tables, treat boxes and more.</p>
 </div>
 </section>
 
-<div class="final-cta">
-<div class="wrap">
-<h2>Order <span class="script">now</span></h2>
-<div class="hero-cta" style="justify-content:center">
-<a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener" class="btn">Order now</a>
+<div class="rose-block">
+<div class="wrap" style="grid-template-columns:1fr">
+<div class="col-copy" style="text-align:center;max-width:640px;margin:0 auto">
+<span class="eyebrow">Ready to order?</span>
+<h2>Let&rsquo;s make your cake</h2>
+<p>Tell us the date, occasion and inspiration. Maria comes back within 24 hours.</p>
+<div class="btn-stack" style="align-items:center;margin-top:24px">
+<a href="contact.html" class="btn">Inquire about your cake</a>
+</div>
 </div>
 </div>
 </div>
 <footer>
-<div class="wrap">
 <div class="footer-brand">
-<img src="assets/marys-logo-white.png" alt="Maria&rsquo;s Cakerie">
-<p>Custom cakes, wedding cakes, dessert tables and treat boxes, handmade in Victoria, BC. Mobile only.</p>
-<p style="margin-top:14px"><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie on Instagram</a></p>
+<img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie">
 </div>
-<div>
-<h4>Explore</h4>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="cakes.html">Cakes &amp; Desserts</a></li>
-<li><a href="weddings.html">Weddings &amp; Events</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="about.html">About Maria</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+<div class="footer-info">Victoria &middot; British Columbia</div>
+<div class="footer-info"><a href="mailto:mariascakeriedesserts@gmail.com">mariascakeriedesserts@gmail.com</a></div>
+<div class="footer-info"><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener">WhatsApp Maria</a></div>
+<div class="footer-social">
+<a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie</a>
+<a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener">@twosisters.social</a>
 </div>
-<div>
-<h4>Sister Brand</h4>
-<ul>
-<li><a href="two-sisters.html">Two Sisters Social</a></li>
-<li><a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener">@twosisters.social &rarr;</a></li>
-</ul>
+<div class="footer-links">
+<a href="two-sisters.html">Two Sisters Social</a>
 </div>
-<div>
-<h4>Get in touch</h4>
-<ul>
-<li><a href="mailto:mariascakeriedesserts@gmail.com">mariascakeriedesserts@gmail.com</a></li>
-<li><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener">WhatsApp</a></li>
-<li>Victoria, BC &middot; Mobile</li>
-</ul>
-</div>
-</div>
-<div class="wrap">
 <div class="copyright">
-&copy; 2026 Maria&rsquo;s Cakerie &amp; Desserts. Two Sisters Social is a sister brand by Maria &amp; Carolina.
-</div>
+&copy; 2026 Maria&rsquo;s Cakerie &amp; Desserts &middot; Site by Demand Studio
 </div>
 </footer>
 <script>
@@ -108,7 +95,7 @@ document.addEventListener('submit', function(e){
   if (e.target.matches('.contact-form')) {
     e.preventDefault();
     e.target.querySelector('.success').classList.add('show');
-    e.target.querySelector('.btn').textContent = 'Sent! Maria will be in touch.';
+    e.target.querySelector('.btn').textContent = 'Sent!';
     e.target.querySelector('.btn').disabled = true;
   }
 });

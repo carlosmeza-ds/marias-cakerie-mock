@@ -6,124 +6,120 @@
 <title>Two Sisters Social | Mobile Drink Bar Victoria BC | Weddings & Events</title>
 <meta name="description" content="Mobile drink bar in Victoria, BC. Handcrafted mocktails and signature beverages for weddings, showers, corporate events and private parties. By Maria and Carolina.">
 <meta name="robots" content="noindex, nofollow">
-<link rel="canonical" href="./ts">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/png" href="assets/marys-logo-rose.png">
 </head>
 <body class="ts-page"><header>
-<div class="wrap">
+<div class="wrap hdr">
+<nav class="nav-left">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="custom-cakes.html">Custom Cakes</a></li>
+<li><a href="wedding-cakes.html">Weddings</a></li>
+</ul>
+</nav>
 <a href="index.html" class="brand">
 <img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie &amp; Desserts">
 </a>
-<button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
-<nav>
+<button class="nav-toggle" aria-label="Menu" onclick="document.querySelectorAll('nav.nav-left, nav.nav-right').forEach(n=>n.classList.toggle('mobile-open'))">&#9776;</button>
+<nav class="nav-right">
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="custom-cakes.html">Custom Cakes</a></li>
-<li><a href="wedding-cakes.html">Wedding Cakes</a></li>
-<li><a href="chunky-cookies.html">Chunky Cookies</a></li>
+<li><a href="chunky-cookies.html">Cookies</a></li>
 <li><a href="workshops.html">Workshops</a></li>
 <li><a href="gallery.html">Gallery</a></li>
-<li><a href="about.html">About Me</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="two-sisters.html" class="nav-two-sisters" active>Two Sisters Social</a></li>
+<li><a href="two-sisters.html" class="active">Two Sisters</a></li>
+<li><a href="contact.html">Order</a></li>
+<li><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener" class="social">IG</a></li>
 </ul>
 </nav>
 </div>
 </header>
-<div class="hero">
-<div class="wrap">
-<div class="hero-copy">
-<span class="eyebrow">By Maria &amp; Carolina</span>
-<h1>Two Sisters <span class="script">Social</span> ✨</h1>
-<p class="lede">Every unforgettable celebration deserves an unforgettable experience.</p>
-<div class="hero-cta">
-<a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener" class="btn">Follow on Instagram</a>
-<a href="contact.html?service=two-sisters" class="btn btn-outline">Inquire Here</a>
-</div>
-</div>
-<div class="hero-visual"><img src="assets/icons/cocktails.png" alt="Two Sisters cocktail menu" class="hero-icon"></div>
+<div class="hero-image" style="background-image:linear-gradient(120deg,#EDF0E5 0%,#F7DEE4 100%)">
+<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:40px">
+<img src="assets/icons/cocktails.png" alt="Two Sisters Social cocktail menu" style="max-height:100%;max-width:900px;filter:brightness(0) invert(45%) sepia(15%) saturate(500%) hue-rotate(45deg) brightness(90%)">
 </div>
 </div>
 
-<section>
+<div class="hero-text">
 <div class="narrow">
-<p style="font-size:1.15rem;line-height:1.8">Welcome to Two Sisters Social a mobile drink bar created to bring elegance, fun, and interactive moments to your special events. From handcrafted mocktails to refreshing signature beverages, every drink is made to impress your guests and elevate your celebration.</p>
-<p style="font-size:1.15rem;line-height:1.8;margin-top:20px">Whether you&rsquo;re planning a wedding, corporate event, birthday, bridal shower, baby shower, or private party, our beautifully styled bar is designed to be more than just drinks it&rsquo;s an experience your guests will remember.</p>
-<p style="font-size:1.15rem;line-height:1.8;margin-top:20px">Here&rsquo;s to creating beautiful moments, one drink at a time. 🥂🤍</p>
-<p style="font-family:\'Aesthetic Monoline\',cursive;color:var(--sage-dark);font-size:1.6rem;text-align:center;margin-top:32px">Now booking for upcoming events!</p>
-</div>
-</section>
-
-<div class="cocktail-showcase">
-<img src="assets/icons/cocktails.png" alt="Cocktail and mocktail menu">
-</div>
-
-<section class="pink">
-<div class="wrap">
-<div class="section-head">
-<h2>Every kind of <span class="script">celebration</span></h2>
-<p>Weddings, corporate events, birthdays, bridal showers, baby showers, private parties.</p>
-</div>
-<div class="grid-4">
-<div class="card"><div class="card-visual"><img src="assets/icons/cake.png" alt="Wedding"></div><div class="card-body"><h3>Weddings</h3></div></div>
-<div class="card"><div class="card-visual rose"><img src="assets/icons/pcake.png" alt="Corporate"></div><div class="card-body"><h3>Corporate events</h3></div></div>
-<div class="card"><div class="card-visual cream"><img src="assets/icons/cupcake.png" alt="Showers"></div><div class="card-body"><h3>Bridal &amp; baby showers</h3></div></div>
-<div class="card"><div class="card-visual warm"><img src="assets/icons/dessert.png" alt="Private parties"></div><div class="card-body"><h3>Private parties</h3></div></div>
-</div>
-</div>
-</section>
-
-<div class="final-cta">
-<div class="wrap">
-<h2>Now booking <span class="script">events</span></h2>
-<div class="hero-cta" style="justify-content:center">
+<span class="eyebrow">Two Sisters Social</span>
+<h1>Every unforgettable celebration deserves an unforgettable experience</h1>
+<p class="lede">A mobile drink bar by Maria and Carolina. Now booking events in Victoria, BC.</p>
+<div class="btn-row">
 <a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener" class="btn">Follow on Instagram</a>
-<a href="contact.html?service=two-sisters" class="btn btn-outline">Inquire Here</a>
+<a href="contact.html?service=two-sisters" class="btn btn-outline">Inquire</a>
+</div>
+</div>
+</div>
+
+<section class="text">
+<div class="narrow">
+<p>Welcome to Two Sisters Social a mobile drink bar created to bring elegance, fun, and interactive moments to your special events. From handcrafted mocktails to refreshing signature beverages, every drink is made to impress your guests and elevate your celebration.</p>
+<p>Whether you&rsquo;re planning a wedding, corporate event, birthday, bridal shower, baby shower, or private party, our beautifully styled bar is designed to be more than just drinks it&rsquo;s an experience your guests will remember.</p>
+<p>Here&rsquo;s to creating beautiful moments, one drink at a time. 🥂🤍</p>
+<p style="text-align:center;font-family:'Poppins',sans-serif;font-style:italic;color:#6D7B5E;font-size:1.2rem;margin-top:24px">Now booking for upcoming events!</p>
+</div>
+</section>
+
+<div class="cat-strip">
+<div class="wrap">
+<div class="sec-head" style="text-align:center;margin-bottom:40px">
+<span class="eyebrow">Built for</span>
+<h2 style="font-family:'Poppins',sans-serif;font-weight:400;font-style:italic;font-size:1.9rem">Every kind of celebration</h2>
+</div>
+<div class="cat-grid" style="grid-template-columns:repeat(4,1fr)">
+<div class="cat-item">
+<div class="cat-photo" style="background:#EDF0E5;display:flex;align-items:center;justify-content:center;padding:36px"><img src="assets/icons/cake.png" alt="Weddings"></div>
+<h3>Weddings</h3>
+</div>
+<div class="cat-item">
+<div class="cat-photo" style="background:#EDF0E5;display:flex;align-items:center;justify-content:center;padding:36px"><img src="assets/icons/pcake.png" alt="Corporate events"></div>
+<h3>Corporate events</h3>
+</div>
+<div class="cat-item">
+<div class="cat-photo" style="background:#EDF0E5;display:flex;align-items:center;justify-content:center;padding:36px"><img src="assets/icons/cupcake.png" alt="Bridal and baby showers"></div>
+<h3>Bridal &amp; baby showers</h3>
+</div>
+<div class="cat-item">
+<div class="cat-photo" style="background:#EDF0E5;display:flex;align-items:center;justify-content:center;padding:36px"><img src="assets/icons/dessert.png" alt="Private parties"></div>
+<h3>Private parties</h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="rose-block" style="background:#8A9A7B">
+<div class="wrap" style="grid-template-columns:1fr">
+<div class="col-copy" style="text-align:center;max-width:640px;margin:0 auto">
+<span class="eyebrow">Now booking</span>
+<h2>Let&rsquo;s make your event unforgettable</h2>
+<div class="btn-stack" style="align-items:center;margin-top:24px">
+<a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener" class="btn" style="background:#fff;color:#6D7B5E">Follow @twosisters.social</a>
+<a href="contact.html?service=two-sisters" class="btn btn-outline" style="border-color:#fff;color:#fff">Inquire</a>
+</div>
 </div>
 </div>
 </div>
 <footer>
-<div class="wrap">
 <div class="footer-brand">
-<img src="assets/marys-logo-white.png" alt="Maria&rsquo;s Cakerie">
-<p>Custom cakes, wedding cakes, dessert tables and treat boxes, handmade in Victoria, BC. Mobile only.</p>
-<p style="margin-top:14px"><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie on Instagram</a></p>
+<img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie">
 </div>
-<div>
-<h4>Explore</h4>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="cakes.html">Cakes &amp; Desserts</a></li>
-<li><a href="weddings.html">Weddings &amp; Events</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="about.html">About Maria</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+<div class="footer-info">Victoria &middot; British Columbia</div>
+<div class="footer-info"><a href="mailto:mariascakeriedesserts@gmail.com">mariascakeriedesserts@gmail.com</a></div>
+<div class="footer-info"><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener">WhatsApp Maria</a></div>
+<div class="footer-social">
+<a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie</a>
+<a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener">@twosisters.social</a>
 </div>
-<div>
-<h4>Sister Brand</h4>
-<ul>
-<li><a href="two-sisters.html">Two Sisters Social</a></li>
-<li><a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener">@twosisters.social &rarr;</a></li>
-</ul>
+<div class="footer-links">
+<a href="two-sisters.html">Two Sisters Social</a>
 </div>
-<div>
-<h4>Get in touch</h4>
-<ul>
-<li><a href="mailto:mariascakeriedesserts@gmail.com">mariascakeriedesserts@gmail.com</a></li>
-<li><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener">WhatsApp</a></li>
-<li>Victoria, BC &middot; Mobile</li>
-</ul>
-</div>
-</div>
-<div class="wrap">
 <div class="copyright">
-&copy; 2026 Maria&rsquo;s Cakerie &amp; Desserts. Two Sisters Social is a sister brand by Maria &amp; Carolina.
-</div>
+&copy; 2026 Maria&rsquo;s Cakerie &amp; Desserts &middot; Site by Demand Studio
 </div>
 </footer>
 <script>
@@ -131,7 +127,7 @@ document.addEventListener('submit', function(e){
   if (e.target.matches('.contact-form')) {
     e.preventDefault();
     e.target.querySelector('.success').classList.add('show');
-    e.target.querySelector('.btn').textContent = 'Sent! Maria will be in touch.';
+    e.target.querySelector('.btn').textContent = 'Sent!';
     e.target.querySelector('.btn').disabled = true;
   }
 });

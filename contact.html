@@ -6,47 +6,49 @@
 <title>Contact & Inquire | Victoria BC Custom Cakes | Maria's Cakerie</title>
 <meta name="description" content="Inquire about a custom cake, wedding cake, dessert table or Two Sisters Social drink bar. WhatsApp, email or the form. Victoria, BC.">
 <meta name="robots" content="noindex, nofollow">
-<link rel="canonical" href="./contact">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/png" href="assets/marys-logo-rose.png">
 </head>
 <body><header>
-<div class="wrap">
+<div class="wrap hdr">
+<nav class="nav-left">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="custom-cakes.html">Custom Cakes</a></li>
+<li><a href="wedding-cakes.html">Weddings</a></li>
+</ul>
+</nav>
 <a href="index.html" class="brand">
 <img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie &amp; Desserts">
 </a>
-<button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
-<nav>
+<button class="nav-toggle" aria-label="Menu" onclick="document.querySelectorAll('nav.nav-left, nav.nav-right').forEach(n=>n.classList.toggle('mobile-open'))">&#9776;</button>
+<nav class="nav-right">
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="custom-cakes.html">Custom Cakes</a></li>
-<li><a href="wedding-cakes.html">Wedding Cakes</a></li>
-<li><a href="chunky-cookies.html">Chunky Cookies</a></li>
+<li><a href="chunky-cookies.html">Cookies</a></li>
 <li><a href="workshops.html">Workshops</a></li>
 <li><a href="gallery.html">Gallery</a></li>
-<li><a href="about.html">About Me</a></li>
-<li><a href="contact.html" class="active">Contact</a></li>
-<li><a href="two-sisters.html" class="nav-two-sisters">Two Sisters Social</a></li>
+<li><a href="two-sisters.html">Two Sisters</a></li>
+<li><a href="contact.html" class="active">Order</a></li>
+<li><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener" class="social">IG</a></li>
 </ul>
 </nav>
 </div>
 </header>
-<div class="hero">
-<div class="wrap">
-<div class="hero-copy">
-<span class="eyebrow">Contact Maria's Cakerie</span>
-<h1>Let&rsquo;s make something <span class="script">sweet together</span></h1>
+<div class="hero-image" style="background-image:url('assets/photos/dsc7210.shrunk.jpg')"></div>
+
+<div class="hero-text">
+<div class="narrow">
+<span class="eyebrow">Contact Maria&rsquo;s Cakerie</span>
+<h1>Let&rsquo;s make something sweet together</h1>
 <p class="lede">Tell us the date, occasion and inspiration. Maria comes back within 24 hours.</p>
-</div>
-<div class="hero-visual"><img src="assets/icons/cupcake.png" alt="Contact" class="hero-icon"></div>
 </div>
 </div>
 
-<section>
-<div class="wrap">
+<div class="contact-section">
 <div class="contact-grid">
 <div class="contact-info">
 <h3>Get in touch</h3>
@@ -54,7 +56,7 @@
 <dt>Email</dt>
 <dd><a href="mailto:mariascakeriedesserts@gmail.com">mariascakeriedesserts@gmail.com</a></dd>
 <dt>WhatsApp</dt>
-<dd><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener">Message on WhatsApp</a></dd>
+<dd><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener">Message Maria</a></dd>
 <dt>Instagram (Maria&rsquo;s Cakerie)</dt>
 <dd><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie</a></dd>
 <dt>Instagram (Two Sisters Social)</dt>
@@ -73,58 +75,35 @@
 <option>Custom cake</option>
 <option>Wedding cake</option>
 <option>Chunky cookies</option>
+<option>Cake workshop</option>
 <option>Two Sisters Social drink bar</option>
-<option>Both cake and drinks</option>
+<option>Cake and drinks</option>
 <option>Something else</option>
 </select>
 </label>
 <label><span>Event date</span><input type="date" name="date"></label>
 <label><span>Your message</span><textarea name="notes"></textarea></label>
-<button type="submit" class="btn">Inquire Here</button>
+<button type="submit" class="btn">Send inquiry</button>
 <div class="success">Thanks. Maria will be in touch.</div>
 </form>
 </div>
-<div class="todo" style="margin-top:36px">This form is a mockup. Wire it to Formspree, Netlify Forms, or a direct email handler when the site goes live.</div>
 </div>
-</section>
 <footer>
-<div class="wrap">
 <div class="footer-brand">
-<img src="assets/marys-logo-white.png" alt="Maria&rsquo;s Cakerie">
-<p>Custom cakes, wedding cakes, dessert tables and treat boxes, handmade in Victoria, BC. Mobile only.</p>
-<p style="margin-top:14px"><a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie on Instagram</a></p>
+<img src="assets/marys-logo-rose.png" alt="Maria&rsquo;s Cakerie">
 </div>
-<div>
-<h4>Explore</h4>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="cakes.html">Cakes &amp; Desserts</a></li>
-<li><a href="weddings.html">Weddings &amp; Events</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="about.html">About Maria</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+<div class="footer-info">Victoria &middot; British Columbia</div>
+<div class="footer-info"><a href="mailto:mariascakeriedesserts@gmail.com">mariascakeriedesserts@gmail.com</a></div>
+<div class="footer-info"><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener">WhatsApp Maria</a></div>
+<div class="footer-social">
+<a href="https://www.instagram.com/marias.cakerie" target="_blank" rel="noopener">@marias.cakerie</a>
+<a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener">@twosisters.social</a>
 </div>
-<div>
-<h4>Sister Brand</h4>
-<ul>
-<li><a href="two-sisters.html">Two Sisters Social</a></li>
-<li><a href="https://www.instagram.com/twosisters.social/" target="_blank" rel="noopener">@twosisters.social &rarr;</a></li>
-</ul>
+<div class="footer-links">
+<a href="two-sisters.html">Two Sisters Social</a>
 </div>
-<div>
-<h4>Get in touch</h4>
-<ul>
-<li><a href="mailto:mariascakeriedesserts@gmail.com">mariascakeriedesserts@gmail.com</a></li>
-<li><a href="https://wa.me/message/IQIPNK3446MJO1" target="_blank" rel="noopener">WhatsApp</a></li>
-<li>Victoria, BC &middot; Mobile</li>
-</ul>
-</div>
-</div>
-<div class="wrap">
 <div class="copyright">
-&copy; 2026 Maria&rsquo;s Cakerie &amp; Desserts. Two Sisters Social is a sister brand by Maria &amp; Carolina.
-</div>
+&copy; 2026 Maria&rsquo;s Cakerie &amp; Desserts &middot; Site by Demand Studio
 </div>
 </footer>
 <script>
@@ -132,7 +111,7 @@ document.addEventListener('submit', function(e){
   if (e.target.matches('.contact-form')) {
     e.preventDefault();
     e.target.querySelector('.success').classList.add('show');
-    e.target.querySelector('.btn').textContent = 'Sent! Maria will be in touch.';
+    e.target.querySelector('.btn').textContent = 'Sent!';
     e.target.querySelector('.btn').disabled = true;
   }
 });
